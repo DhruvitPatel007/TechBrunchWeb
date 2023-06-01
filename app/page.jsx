@@ -4,15 +4,17 @@ const Home = () => {
   return (
     <section className="w-full flex-center flex-col">
       <h1 className="head_text text-center">
-        Discover & Share
+        Come across & Share
         <br className="max-md:hidden" />
-        <span className="orange_gradient text-center">AI-Powered Prompts</span>
+        <span className="green_gradient text-center">Technical Prompts</span>
       </h1>
       <p className="desc text-center">
-        Tech Brunch is an open-source AI prompting tool for modern world to discover, create and share creative prompts
+        Tech Brunch is a collaborative AI platform designed to facilitate the
+        exploration, generation, and sharing of imaginative prompts in the
+        digital age.
       </p>
 
-      <Feed/>
+      <Feed />
     </section>
   );
 };

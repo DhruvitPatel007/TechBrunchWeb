@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { signIn, signOut, useSession, getProviders } from "next-auth/react";
 
+
 const Nav = () => {
   const {data : session} = useSession();
   const [providers, setProviders] = useState(null);
@@ -23,15 +24,13 @@ const Nav = () => {
     <nav className="flex-between w-full mb-16 pt-3">
       <Link href="/" className="flex gap-2 flex-center">
         <Image
-          src="assets/images/logo.svg"
+        src="/assets/images/logolatest.png"
           alt="Logo"
-          width={30}
-          height={30}
-          className="object-contain"
+          width={200}
+          height={200}
+          className="object-contain bg-transparent"
         />
-        <p className="logo_text">Tech Brunch</p>
       </Link>
-
       {/* Desktop Navigation */}
       <div className="sm:flex hidden">
         {session?.user ? (
